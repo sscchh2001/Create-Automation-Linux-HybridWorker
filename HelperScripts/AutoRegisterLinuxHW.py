@@ -14,7 +14,7 @@ def download_omsagent(options):
     workspaceKey = options.workspace_key
     workspaceRegion = options.region
 
-    opinsightsVal = "opinsights.azure.com"
+    opinsightsVal = "opinsights.azure.cn"
     cmdToDownloadOmsAgent = ["wget", "https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh"] 
     cmdToInstallOmsAgent = ["sh", "onboard_agent.sh", "-w", workspaceId, "-s", workspaceKey, "-d", opinsightsVal]
     
